@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --sedan-color : hsl(31, 77%, 52%);
+    --suv-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+.car-container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 100px auto;
+    color: white;
+}
+@media(max-width: 756px) {
+    .car-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.car-item {
+    height: 500px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+.car-item-1 {
+    background-color: var(--sedan-color);
+}
+.car-item-2 {
+    background-color: var(--suv-color);
+}
+.car-item-3 {
+    background-color: var(--luxury-color);
+}
+.car-title {
+   text-transform: uppercase;
+   font-family: 'Big Shoulders Display', cursive;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.car-description {
+    line-height: 1.5;
+}
+.car-button {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    width: 60%;
+    height: 8%;
+    padding: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-button-1 {
+    color: orange;
+}
+.car-button-1:hover {
+    background: var(--sedan-color);
+    border-color: white;
+    border: 1px solid white;
+    color: white;
+}
+.car-button-2 {
+    color: var(--suv-color);
+}
+.car-button-2:hover {
+    background: var(--suv-color);
+    border-color: white;
+    border: 1px solid white;
+    color: white;
+}
+.car-button-3 {
+    color: var(--luxury-color);
+}
+.car-button-3:hover {
+    background: var(--luxury-color);
+    border-color: white;
+    border: 1px solid white;
+    color: white;
+}
